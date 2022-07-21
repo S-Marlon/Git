@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+
+    <br>
+    <div class="container">
+        <div class="center">
+
+        <?php
+     echo date("d/m/y h:i:s");
+     ?>     
+    <form>
+        <label>
+            <p> Usuário: </p>
+            <input type="text" required placeholder="Usuário" name="usuario"> 
+        </label>
+        <label>
+            <p> Senha: </p>
+            <input type="password" required placeholder="Senha" name="senha"> 
+        </label>
+        <br>
+        <br>
+        <input type="submit" id="botao">
+    </form>
+
+     <?php
+    if (isset($_GET["usuario"])){
+
+     
+        echo "<br>".$_GET["usuario"];
+
+        echo "<br>".$_GET["senha"];
+        if($_GET["usuario"] == "kaique" and $_GET["senha"] == "senha"){
+             echo "<br>Bem-Vindo, Gostoão Eu tudo Ai que tudo x-caceta";
+        }
+        else if ($_GET["usuario"] == null and $_GET["senha" == ""]){
+            echo "Nada escrito";
+        }
+        else{
+            echo "<br>Bem-Vindo, ".$_GET["usuario"];
+        }
+    }
+    ?>
+    </div>
+</div>
+</body>
+</html>

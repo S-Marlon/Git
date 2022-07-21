@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="_img/energy.png"/>
+
+<style>
+  section {
+            position: relative;
+            background: url(demo.jpg);
+            background-attachment: fixed;
+            height: 100vh;
+        }
+ 
+       .area{
+        background-color: rgba(0,0,0,.3);
+        backdrop-filter: blur(105px); 
+        position:absolute;
+        top:20%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+       }
+
+       .alerta{
+        position: absolute;top: 73%;
+       }
+       
+
+        input.form-control:focus{
+          border:gray;
+          
+          box-shadow: 0px 0px  7px white;
+        }
+
+</style>
+
+</head>
+<body style="background-image: url('_img/background3.png');background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;" id="body">
+
+
+<nav>
+</nav>
+
+
+<header>
+</header>
+
+
+
+
+<main class="">
+    
+<div class="container vh-100">
+
+  <div class="row h-100">
+
+    
+
+    <div class="col-1 col-sm-1 col-md-3 col-lg-6 col-xl-7">
+
+    </div>
+
+
+
+
+
+     <div class="col-10 col-sm-10 col-md-7 col-lg-5 col-xl-4 d-flex justify-content-center">  <!-- //d-flex align-items-center-->   
+      <div class="p-5 pt-4 m-5 align-self-center border border-2 border-dark area"> 
+        <form id="FormLogin">
+      
+      <div class="d-flex justify-content-center">
+        
+        <svg xmlns="http://www.w3.org/2000/svg"  class="m-3" height="75" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg>
+      </div>
+
+        <br>
+          <input type="text" id="usuario" class="form-control  mb-4 text-center" placeholder="Usuário" maxlength="16">
+          
+          <input type="password" id="senha" class="form-control  my-4 text-center" placeholder="Senha" maxlength="16">
+
+          
+
+        <button type="submit" class="btn form-control my-4" style="background-color:#657D85;"> Entrar </button>
+
+        </div>
+        
+      </form>
+      
+      <span id="msgErroLoginUsr" class="alerta"> </span>
+      </div> <!-- col-5 -->
+
+
+    <div class="col-1 col-sm-1 col-md-2 col-lg-1 col-xl-1"></div>
+
+
+
+    </div>  <!-- row -->
+  </div><!-- container -->
+
+</main>
+
+<footer>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="_js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
